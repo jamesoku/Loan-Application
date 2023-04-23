@@ -13,8 +13,11 @@ import { MaterialModule } from "./shared/material.module";
 import { ApplicationsComponent } from "./applications/applications.component";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
-
 import { MatMenuModule } from "@angular/material/menu";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatDialogModule } from "@angular/material/dialog";
+import { DialogBodyComponent } from "./dialog-body/dialog-body.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import { MatMenuModule } from "@angular/material/menu";
     NavMenuComponent,
     ApplicationsComponent,
     CreateApplicationComponent,
+    DialogBodyComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "ng-cli-universal" }),
@@ -36,8 +40,12 @@ import { MatMenuModule } from "@angular/material/menu";
     MatTableModule,
     MatSortModule,
     MatMenuModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [DialogBodyComponent],
 })
 export class AppModule {}

@@ -1,0 +1,7 @@
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.confirm-button {
+  color: rgb(54, 125, 172);
+}

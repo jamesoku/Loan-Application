@@ -1,5 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { DialogBodyComponent } from "../dialog-body/dialog-body.component";
+import { MatDialog } from "@angular/material/dialog";
+
 export interface PeriodicElement {
   applicationNumber: number;
   amount: number;
@@ -56,8 +59,12 @@ export class ApplicationsComponent {
     "actions",
   ];
   dataSource = ELEMENT_DATA;
-  constructor(private router: Router) {}
-
+  constructor(private router: Router, private MatDialog: MatDialog) {}
+  openDialog() {
+    this.MatDialog.open(DialogBodyComponent, {
+      width: "600px",
+    });
+  }
   editRowData(rowData: any) {
     console.log(rowData);
     this.router.navigate(["edit-application"], { state: rowData });

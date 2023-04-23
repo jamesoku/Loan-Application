@@ -61,7 +61,7 @@
                   applicationForm.controls.phoneNumber.touched
                 "
               >
-                Please enter a valid 9-digit phone number.
+                Invalid phone number.
               </mat-error>
             </mat-form-field>
           </div>
@@ -75,7 +75,7 @@
                   applicationForm.controls.email.touched
                 "
               >
-                Please enter a valid email address.
+                Invalid email address.
               </mat-error>
             </mat-form-field>
           </div>
@@ -89,12 +89,23 @@
         <div class="input-wrap-row">
           <div class="input-wrap">
             <mat-form-field appearance="outline" class="input-wrap__input">
-              <mat-label>Application Number *</mat-label>
+              <mat-label>Application Number </mat-label>
               <input
                 matInput
                 formControlName="applicationNumber"
-                placeholder="Application Number *"
+                placeholder="Application Number"
+                [readonly]="isReadOnly"
               />
+              <mat-error
+                *ngIf="
+                  applicationForm.controls.applicationNumber.invalid &&
+                  applicationForm.controls.applicationNumber.touched &&
+                  !applicationForm.controls.applicationNumber.value &&
+                  isReadOnly == false
+                "
+              >
+                Application Number is required.
+              </mat-error>
             </mat-form-field>
           </div>
           <div class="input-wrap">
@@ -111,8 +122,16 @@
         <div class="input-wrap-row">
           <div class="input-wrap">
             <mat-form-field appearance="outline" class="input-wrap__input">
-              <mat-label>Amount *</mat-label>
-              <input matInput formControlName="amount" placeholder="Amount *" />
+              <mat-label>Amount</mat-label>
+              <input matInput formControlName="amount" placeholder="Amount " />
+              <mat-error
+                *ngIf="
+                  applicationForm.controls.amount.invalid &&
+                  applicationForm.controls.amount.touched
+                "
+              >
+                Invalid amount
+              </mat-error>
             </mat-form-field>
           </div>
           <div class="input-wrap">
@@ -122,6 +141,7 @@
                 matInput
                 formControlName="monthlyPayAmount"
                 placeholder="Monthly Payment Amount"
+                readonly
               />
             </mat-form-field>
           </div>
@@ -129,8 +149,16 @@
         <div class="input-wrap-row">
           <div class="input-wrap" id="lastInput">
             <mat-form-field appearance="outline" class="input-wrap__input">
-              <mat-label>Terms *</mat-label>
-              <input matInput formControlName="terms" placeholder="Terms *" />
+              <mat-label>Terms </mat-label>
+              <input matInput formControlName="terms" placeholder="Terms " />
+              <mat-error
+                *ngIf="
+                  applicationForm.controls.terms.invalid &&
+                  applicationForm.controls.terms.touched
+                "
+              >
+                Terms is required
+              </mat-error>
             </mat-form-field>
           </div>
         </div>
