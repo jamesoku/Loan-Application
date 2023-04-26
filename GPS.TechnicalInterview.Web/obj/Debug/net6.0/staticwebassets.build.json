@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "f+1x/YQPocJK3QMsdwgZizUWcE9eiwLiRFrkBJgNl+A=",
+  "Source": "GPS.ApplicationManager.Web",
+  "BasePath": "_content/GPS.ApplicationManager.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GPS.ApplicationManager.Web\\wwwroot",
+      "Source": "GPS.ApplicationManager.Web",
+      "ContentRoot": "C:\\Users\\okuja\\Projects\\GPSTechnicalInterview\\GPS.TechnicalInterview.Web\\wwwroot\\",
+      "BasePath": "_content/GPS.ApplicationManager.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\okuja\\Projects\\GPSTechnicalInterview\\GPS.TechnicalInterview.Web\\wwwroot\\favicon.ico",
+      "SourceId": "GPS.ApplicationManager.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\okuja\\Projects\\GPSTechnicalInterview\\GPS.TechnicalInterview.Web\\wwwroot\\",
+      "BasePath": "_content/GPS.ApplicationManager.Web",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}
