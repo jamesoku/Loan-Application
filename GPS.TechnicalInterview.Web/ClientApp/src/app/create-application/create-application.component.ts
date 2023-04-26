@@ -16,22 +16,10 @@ export class CreateApplicationComponent implements OnInit {
   // Properties
   public applicationForm: FormGroup;
   public statuses: Array<string> = ["New", "Approved", "Funded"];
-<<<<<<< HEAD
   public rowData: any;
   public currentRoute: string = "";
   public isReadOnly: boolean;
   public foundApplication: any;
-=======
-  rowData: any;
-  public currentRoute: string = "";
-  isReadOnly: Boolean;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 
   // Constructor
   constructor(
@@ -45,81 +33,28 @@ export class CreateApplicationComponent implements OnInit {
       lastName: [null, Validators.required],
       phoneNumber: [null, Validators.pattern(/^\d{9}$/)],
       email: [null, Validators.email],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       applicationNumber: [null, [Validators.required]],
-=======
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-      applicationNumber: [
-        null,
-        [
-          Validators.required,
-          Validators.pattern(/^(?!0\.0*$)(?!\.?\d$)\d*(\.\d{1})?$/),
-        ],
-      ],
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
       status: ["New"],
       amount: [
         null,
         [
           Validators.required,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
           Validators.pattern(
             /^(?!\$?0(?:\.0{1,2})?$)(?!\$0\.0)(?!\$0\.00)(?<![\d,])\$?[\d]+(?:,[\d]{3})*(\.\d{1,2})?$/
           ),
         ],
       ],
-      monthlyPayAmount: [null],
+
       terms: [null, [Validators.required, Validators.pattern(/^[1-9]\d*$/)]],
-=======
-          Validators.pattern(/^(?!0\.0*$)(?!\.?\d$)\d*(\.\d{1,2})?$/),
-        ],
-      ],
-      monthlyPayAmount: [null],
-=======
-          Validators.pattern(/^(?!0\.0*$)(?!\.?\d$)\d*(\.\d{1,2})?$/),
-        ],
-      ],
-      monthlyPayAmount: [null],
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
-          Validators.pattern(/^(?!0\.0*$)(?!\.?\d$)\d*(\.\d{1,2})?$/),
-        ],
-      ],
-      monthlyPayAmount: [null],
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-      terms: [
+      monthlyPayAmount: [
         null,
-        [
-          Validators.required,
-          Validators.pattern(/^(?!0\.0*$)(?!\.?\d$)\d*(\.\d{1})?$/),
-        ],
+        Validators.pattern(
+          /^(?!\$?0(?:\.0{1,2})?$)(?!\$0\.0)(?!\$0\.00)(?<![\d,])\$?[\d]+(?:,[\d]{3})*(\.\d{1,2})?$/
+        ),
       ],
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
     });
   }
   ngOnInit() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     // Get current route
     this.currentRoute = this.router.url;
 
@@ -304,23 +239,4 @@ export class CreateApplicationComponent implements OnInit {
 
     return loanApplication;
   };
-=======
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-    this.currentRoute = this.router.url;
-    if (this.currentRoute === "/create-application") {
-      this.isReadOnly = false;
-    } else this.isReadOnly = true;
-
-    console.log(this.isReadOnly);
-  }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 }
