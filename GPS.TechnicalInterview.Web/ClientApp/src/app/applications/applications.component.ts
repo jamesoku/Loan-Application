@@ -2,13 +2,12 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { DialogBodyComponent } from "../dialog-body/dialog-body.component";
 import { MatDialog } from "@angular/material/dialog";
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import { HttpClient } from "@angular/common/http";
 
-=======
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+
+import { DialogBodyComponent } from "../dialog-body/dialog-body.component";
+import { MatDialog } from "@angular/material/dialog";
 
 export interface PeriodicElement {
   applicationNumber: number;

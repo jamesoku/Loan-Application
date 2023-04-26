@@ -26,6 +26,9 @@ export class CreateApplicationComponent implements OnInit {
   public currentRoute: string = "";
   isReadOnly: Boolean;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+=======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
@@ -44,8 +47,11 @@ export class CreateApplicationComponent implements OnInit {
       email: [null, Validators.email],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       applicationNumber: [null, [Validators.required]],
 =======
+=======
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
       applicationNumber: [
@@ -56,6 +62,9 @@ export class CreateApplicationComponent implements OnInit {
         ],
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+=======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
@@ -64,6 +73,7 @@ export class CreateApplicationComponent implements OnInit {
         null,
         [
           Validators.required,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           Validators.pattern(
@@ -84,6 +94,12 @@ export class CreateApplicationComponent implements OnInit {
       ],
       monthlyPayAmount: [null],
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+=======
+          Validators.pattern(/^(?!0\.0*$)(?!\.?\d$)\d*(\.\d{1,2})?$/),
+        ],
+      ],
+      monthlyPayAmount: [null],
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
       terms: [
         null,
         [
@@ -92,12 +108,16 @@ export class CreateApplicationComponent implements OnInit {
         ],
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+=======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
     });
   }
   ngOnInit() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     // Get current route
@@ -287,6 +307,8 @@ export class CreateApplicationComponent implements OnInit {
 =======
 =======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+=======
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
     this.currentRoute = this.router.url;
     if (this.currentRoute === "/create-application") {
       this.isReadOnly = false;
@@ -295,6 +317,9 @@ export class CreateApplicationComponent implements OnInit {
     console.log(this.isReadOnly);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+=======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694

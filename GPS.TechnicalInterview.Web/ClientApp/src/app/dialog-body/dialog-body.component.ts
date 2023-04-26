@@ -1,8 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Component, Inject, OnInit } from "@angular/core";
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+=======
+import { Component, OnInit } from "@angular/core";
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
 import { Component, OnInit } from "@angular/core";
 >>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
@@ -15,6 +19,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./dialog-body.component.css"],
 })
 export class DialogBodyComponent implements OnInit {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   constructor(
@@ -54,6 +59,11 @@ export class DialogBodyComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.data);
   }
+=======
+  constructor() {}
+
+  ngOnInit(): void {}
+>>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 =======
   constructor() {}
 

@@ -18,13 +18,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatDialogModule } from "@angular/material/dialog";
 import { DialogBodyComponent } from "./dialog-body/dialog-body.component";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
 
 @NgModule({
   declarations: [
@@ -32,6 +26,7 @@ import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
     NavMenuComponent,
     ApplicationsComponent,
     CreateApplicationComponent,
+    DialogBodyComponent,
     DialogBodyComponent,
   ],
   imports: [
@@ -50,13 +45,10 @@ import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
-<<<<<<< HEAD
-<<<<<<< HEAD
     MatSnackBarModule,
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
-=======
->>>>>>> cb30f421ccb3cf9311226e1fe48bf6fbd8e5e694
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
